@@ -1,0 +1,113 @@
+.nav-container .setting a{
+	color: var(--main-color);
+}
+.main-section {
+    width: 95vw;
+    height: 100vh;
+    padding: 5px;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container form {
+    padding: 20px 50px;
+    background: rgba(87, 87, 87, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(87, 87, 87, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-field {
+    font-size: 14px;
+    position: relative;
+    --field-padding: 12px;
+    border-top: 20px solid transparent;
+    margin-bottom: 10px;
+}
+
+.custom-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: var(--field-padding);
+    border-radius: 3px;
+    width: 250px;
+    font-size: 14px;
+}
+
+.custom-field .placeholder {
+    position: absolute;
+    left: 12px;
+    bottom: 50%;
+    top: 22px;
+    transform: translateY(-50%);
+    width: calc(100% - 24px);
+    color: #aaa;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.custom-field input:hover,
+.custom-field input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--main-color);
+}
+
+.custom-field input:hover+.placeholder,
+.custom-field input:focus+.placeholder {
+    top: -6px;
+    left: 0px;
+    color: var(--main-color);
+}
+
+.main-container form button {
+    border: none;
+    color:black;
+    background: linear-gradient(to right, #e66465, #9198e5);
+    padding: 8px 15px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
+.main-container form h1 {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-container form h5{
+    color: white;
+    font-weight: 500;
+}
+.main-container form h5 a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.nav-container .setting a{
+	color: var(--main-color);
+}
+
+@media screen and (max-width:900px){
+    body{
+        background-color: red;
+    }
+}
